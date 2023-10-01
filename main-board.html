@@ -7,67 +7,251 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
     
     
 </head>
-<!-- Main -->
-<main>
-    <section>
-        <div class="title">
-            <img src="" alt="" class="head-pic">
-            <h1>Serapah Tuhan</h1>
-            <p>Hei Yo!, It's Me
-                <br> <Span>ARIF SETIYANTO</Span>
-                 <br> And I am A <span class="typing-effect"></span>
-                <br>Welcome to my web page
-            </p>
-        </div>
-    </section>
-    
-    <navbar class="me">
-        <div class="container">
-            <div class="header-container">
-                <div class="icon-bar"></div>
-                    <div class="icon-bar-logo">
-                        <a href="/">
-                            Test
-                        </a>
-                    </div>
-                <div class="menu-bar">
-                  <nav class="header-contain-menu-item">
-                    <ul class="header-contain-menu">
-                        <li class="header-menu">
-                        <a href="/" class="header-contain-menu-link">Home</a>
-                        </li>
-                        <li class="header-menu">
-                        <a href="/" class="header-contain-menu-link">About</a>
-                        </li>
-                        <li class="header-menu">
-                        <a href="/" class="header-contain-menu-link">Works</a>
-                        </li>
-                        <li class="header-menu">
-                        <a href="/" class="header-contain-menu-link">Contact</a>
-                        </li>
-                        <!-- <li class="header-menu">
-                        <a href="/" class="header-contain-menu-link"></a>
-                        </li> -->
-                    </ul>
-                  </nav> 
+
+<!-- Body -->
+
+<body>
+    <!-- Main Section -->
+    <main>
+
+        <!-- Header -->
+        <div class="navbar" id="navbar">
+                <div class="icon-bar">
+                    <h1><a href="/">PRTFL</a></h1>
                 </div>
-                <div class="mode-bar"></div>
+        <nav class="menu-bar">
+            <ul class="header-contain-menu">
+                <li class="header-menu">
+                <a href="#home" class="header-contain-menu-link">Beranda</a>
+                </li>
+                <li class="header-menu">
+                <a href="#about" class="header-contain-menu-link">Tentang Diri</a>
+                </li>
+                <li class="header-menu">
+                <a href="#Project" class="header-contain-menu-link">Galeri</a>
+                </li>
+                <li class="header-menu">
+            </ul>
+        </nav>
+        <div class="contact">
+            <h1><a href="#mycontact">Kontak</a></h1>
+        </div>
+        </div>
+
+        <!-- Home Section -->
+
+        <div class="home-index" id="home">
+        <section class="homeleft">
+            <div class="home-content">
+                <h2>Hei Yo!, It's Me</h2>
+                <h1>Arif Setiyanto</h1>
+                <h3>And I'm a <span class="typing-effect"></span></h3>
+                <p>I Build Interactive Website that run Accros Platforms & devices.</p>
+                    <div class="social-media">
+                        <a href="https://web.facebook.com/setiyanto.arif"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://instagram.com/serapahtuhan"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://github.com/Ni0nt"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.linkedin.com/in/arif-setiyanto"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1q1F0Jdilai5d0r11YMI4-f8cslTmgQDb/view?usp=sharing" class="btn">
+                        <button>Download CV</button>
+                    </a>
+            </div>
+            </section>
+
+        <aside class="pict">
+            <img src="assets/phone.gif" alt="palsaadasdad">
+        </aside>
+        </div>
+
+
+        <!-- About Section -->
+        <div class="about" id="about">
+            <h1>About <span>me</span></h1>
+            <div class="about-content card">
+            <div class="glass">              
+            <aside class="personal-data">
+                <!-- <h3>Data Diri</h3> -->
+                <div class="img-text">
+                    <div class="img-box">
+                      <img src="assets/photo.png">
+                    </div>
+                    <h3>Arif Setiyanto</h3>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>Dicoding</th>
+                          <td><a href="https://www.dicoding.com/users/arif_setiyanto/academies">arif_setiyanto</a></td>
+                        </tr>
+                        <tr>
+                          <th>Email</th>
+                          <td>arf.setiyanto@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <th>Institusi</th>
+                          <td>Universitas Tidar</td>
+                        </tr>
+                        <tr>
+                          <th>Jurusan</th>
+                          <td>Teknik Elektro</td>
+                        </tr>
+                        <tr>
+                          <th>Kota</th>
+                          <td>Magelang</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Skilll -->
+                  <div class="kemampuan">
+                    <h4><span>Skills</span></h4>
+                    <ul class="skill">
+                        <li>
+                            <i class='bx bxl-html5' alt="HTML"></i>
+                            <p>Intermediete</p>
+                        </li>
+                        <li>
+                            <i class='bx bxl-css3' ></i>
+                            <p>Intermediete</p>
+                        </li>
+                        <li>
+                            <i class='bx bxl-javascript' ></i>
+                            <p>Beginner</p>
+                        </li>
+                        <li>
+                            <i class='bx bxl-java' alt="Java"></i>
+                            <p>Beginner</p>
+                        </li>
+                        <li>
+                            <i class='bx bxl-figma'></i>
+                            <p>Intermediete</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </aside>
+            </div>
+
+            <article class="article-content">
+                <h3>Resume</h3>
+                    <p>Selama perjalanan saya sebagai mahasiswa, saya telah belajar dan mengembangkan keterampilan dalam dunia pengembangan web. Saya fokus pada pengembangan front-end dengan menggunakan bahasa pemrograman seperti HTML, CSS, dan JavaScript.</p> 
+                    Saya senang mempelajari kerangka kerja populer seperti Bootstrap dan React untuk memperluas pengetahuan saya tentang pengembangan web modern.Saya adalah seorang pembelajar yang gigih dan tangguh, selalu mencari kesempatan untuk memperdalam pengetahuan saya tentang teknologi terbaru dan tren desain web. Saya membaca buku, mengikuti kursus daring, dan aktif dalam komunitas pengembangan web untuk terus mengasah keterampilan saya. Saya juga berkolaborasi dengan rekan-rekan sekelas untuk memecahkan masalah bersama dan memperluas pemahaman saya tentang pengembangan web.
+                    <p>Saya memiliki minat dalam menggabungkan desain yang responsif, animasi halus, dan fungsi yang kuat untuk menciptakan pengalaman digital yang menarik. Saya percaya bahwa dengan pemikiran kreatif dan pemahaman yang mendalam tentang pengalaman pengguna, saya dapat menciptakan tampilan web yang menarik dan intuitif bagi pengguna.</p>
+                    <p>Selain menjadi seorang pengembang web, Saya adalah seorang mahasiswa dan sedang tahap akhir menyelesaikan program studi Teknik Elektro. Sebagai seorang Calon insinyur elektrik, saya memiliki kemampuan untuk menganalisis dan merancang sistem kelistrikan yang efisien dan andal. Saya juga memiliki pengetahuan yang kuat dalam bidang keandalan dan keselamatan listrik.</p>
+                    <p>Gabungan antara keahlian saya sebagai insinyur elektrik dan pengembang web memberikan perspektif unik dalam pendekatan saya terhadap proyek-proyek pengembangan web. Saya mampu memahami kebutuhan teknis yang kompleks dan menerapkan solusi yang inovatif dalam mengembangkan aplikasi web. Selain itu, pemahaman saya tentang keandalan dan keselamatan listrik membantu saya memastikan bahwa proyek-proyek yang saya kerjakan memenuhi standar yang ketat</p>
+                    <p>saya juga memiliki minat lain di luar dunia teknologi . Saya senang mendengarkan musik, membaca buku, dan menjelajahi tempat-tempat baru. Saya percaya bahwa minat dan hobi pribadi juga memberikan inspirasi dan kreativitas dalam pekerjaan saya sebagai pengembang web.</p>
+                    <p>Saya sangat bersemangat untuk menjalin hubungan baru dan berkontribusi dalam proyek-proyek menarik. Saya yakin bahwa dengan dedikasi, kerja keras, dan semangat yang tak terbatas, saya dapat menjadi pengembang web yang berkualitas dan memberikan kontribusi yang berarti dalam industri ini.</p>
+            </article>
+            </div>
+
+            
+
+        </div>
+
+      
+    <!-- Portfolio Section Design -->
+    <section class="portofolio" id="Project">
+        <h1>Latest<span>Project</span></h1>
+    
+        <div class="portofolio-section">
+            <div class="portofolio-box">
+                <img src="assets/phone.gif" alt="">
+                <div class="portofolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Project #1 | Coming Soon</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="assets/phone.gif" alt="">
+                <div class="portofolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Project #2 | Coming Soon</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="assets/phone.gif" alt="">
+                <div class="portofolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Project #3 | Coming Soon</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="assets/phone.gif" alt="">
+                <div class="portofolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Project #4 | Coming Soon</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="assets/phone.gif" alt="">
+                <div class="portofolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Project #5 | Coming Soon</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="assets/phone.gif" alt="">
+                <div class="portofolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Project #6 | Coming Soon</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
         </div>
-        <main class="main-index">
-            <section class="home-section">
-                
-            </section>
-        </main>
-    </navbar>
-    
-    <script src="JS/mengetik.js"></script>
-</main>
-<!-- Footer -->
-<footer>
+    </section>
+    <!-- End Portfolio Section -->
 
-</footer>
+    <!-- Contact Section -->
+    <div id="mycontact" class="mycontact">
+        <div class="contactMenu">
+            <h1>Get in<span>Touch</span></h1>
+            <p>You can contact me via my social media below:</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com/setiyanto.arif"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://instagram.com/serapahtuhan"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://medium.com/"><i class='bx bxl-medium-old'></i></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://github.com/Ni0nt"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/arif-setiyanto"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+            <div class="send">
+                <h3>Any Question?</h3>
+                <form action="mailto:arf.setiyanto@gmail.com" method="post">
+                            <div class="inputBox" data-aos="fade-up">
+                                <textarea type="text" placeholder="Masukkan Teks" ></textarea>
+                                
+                            </div>
+                                <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!--  End Contact Section -->
+
+    
+    </main>
+
+    <footer>
+        <p>Created by <span>Ni0nt</span> with &#128156; and passion </p>
+        <p>&copy;copyright all rights reserved (Dicoding Academy)</p>
+    </footer>
+</body>
+    <script src="JS/mengetik.js"></script>
+    <script src="JS/navbar.js"></script>
+
 </html>

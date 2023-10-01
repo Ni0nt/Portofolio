@@ -1,80 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Montserrat';
+    text-decoration: none;
 }
 
 :root{
-    --bg-color: #fffffe;
-    --second-bg-color:  #bae8e8;
-    --text-color: #2d334a ;
-    --main-color:  #950101 ;
-    --button-color: #ffd803;
+    /* Elements */
+    --main-color: #362FD9;
+    --second-bg-color:  #1AACAC;
+    --headline: #2E97A7 ; 
+    --bg: #EEEEEE;
+    /* Icons */
+    --stroke:#272343;
     --tertiary-color: #bae8e8;
+    --text: #000000;
 }
 
 html {
     scroll-behavior: smooth;
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 24px;
   }
+span {
+    color: var(--main-color);
+    padding: 0% 0.2rem 0%;
+}
 /*---------------------------------------------------------------------------------------------------*/
-/*===================================================================================================*/
-/*---------------------------------------------------------------------------------------------------*/
-
-.title{
-    width: 90%;
-    padding: 1em;
-    background-color: var(--second-bg-color);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: block;
-    line-height: 21px;
-    transition: 0.5s;
-}
-/* .Title img{
-width: 200px;
-height: auto;
-transition: 0.5s;
-}
-    
-.Title h1{
-font-weight: 700;
-line-height: 80px;
-font-size: 38px;
-transition: 0.5s;
-text-align: center;
-}
-.Title p{
-font-weight: 300;
-font-size: 18px;
-transition: 0.5s;    
-}
-.Title svg{
-margin-top: 21px;
-width: 198px;
-height: 6px;
-background: linear-gradient(94.94deg, #FD9E04 -1.76%, #FF4C01 80.53%);
-border-radius: 75px;
-transition: 0.5s;
-} */
-
-/*---------------------------------------------------------------------------------------------------*/
-/*===================================================================================================*/
+/*=======================================HEADER======================================================*/
 /*---------------------------------------------------------------------------------------------------*/
 .navbar{
-    position:sticky;
+    background-color: transparent;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 200;
+    z-index: 100;
     top: 0;
-    bottom: auto;
-    background: #161f28;
-    overflow: hidden;
-    height: 60px;
+    padding: 5px;
+    transform: translateY(-100%);
+    transition: 0.5s ease-in-out;
 }
+
+.navbar.active{
+    transform: translateY(0);
+}
+
+.menu-bar ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.menu-bar ul li a{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--main-color);
+}
+
+.icon-bar {
+    padding: 5px;
+    font-size: 0.5rem;
+    margin-top: 5px;
+}
+.contact {
+    padding: 5px;
+    font-size: 0.5rem;
+    margin-top: 0.1rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*====================================== About Section ==============================================*/
+/*---------------------------------------------------------------------------------------------------*/
+.home-index{
+    display: flex;
+    flex-direction: row;
+    color: var(--bg-color);
+    background-color: var(--bg);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.homeleft{
+    flex: 1;
+    padding: 0.7rem;
+    transition: 0.5s;
+}
+
+.pict{
+    flex: 1;
+    padding: 20px;
+}
+img{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+aside{
+    display: flex;
+    justify-content: center;
+}
+.home-content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+.home-content .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--main-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2rem 1rem 3rem 0;
+    transition: .1s ease-out;
+}
+.home-content .social-media a:hover{
+    background: transparent;
+    color: var(--second-bg-color);
+    box-shadow: var(--bg);
+    border: .3rem solid var(--bg);
+}
+
+.btn button{
+    display: inline-block;
+    padding: .2rem .9rem;
+    background: transparent;
+    border-radius: 1.6rem;
+    box-shadow: 0 .2rem .5rem var(--second-bg-color);
+    font-size: 2.4rem;
+    color: var(--main-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border:  .2rem solid var(--main-color);
+    transition: .5s ease;
+}
+
+button:hover{
+    background: transparent;
+    color: var(--second-bg-color);
+    border-color: var(--second-bg-color);
+    box-shadow: var(--main-color);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*==================================About Section Style===================================================*/
+/*---------------------------------------------------------------------------------------------------*/
+.about{
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.about h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.about-content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.card{
+    margin-right: 1em;
+    box-shadow: var(--bg);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(54, 47, 217, 0.1), rgba(26, 172, 172,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(26, 172, 172, 0.1);
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column  
+}
+.article-content{
+    flex: 1;
+    flex-basis: 50%;
+    justify-content: center;
+    text-align: justify;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 2rem;
+}
+
+.img-text {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex: 1 1 20rem;
+    padding: 3rem 2rem 2rem;
+    text-align: left;
+    border-radius: 4rem;
+    transition: .5s ease;
+}
+.img-box{
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: 0px;
+}
+.img-text td {
+    padding: 0 5px;
+}
+
+.kemampuan ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+.kemampuan h4{
+    text-align: center;
+    font-weight: bold;
+}
+.skill li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.skill li i{
+
+    font-size: 3rem;
+    padding: 5px;
+}
+.skill li p {
+    align-items: center;
+    text-align: center;
+    font-size: .8rem;
+    margin: 10px; /* Sesuaikan dengan jarak yang Anda inginkan antara logo dan teks */
+}
+.skill li .bxl-html5{
+    color: #E44D26;
+}
+.skill li .bxl-css3{
+    color: #264DE4;
+}
+.skill li .bxl-javascript{
+    color: #F7DF1E;
+}
+.skill li .bxl-java{
+    color: #643700;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*=========================================End About Section========================================*/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/*=========================================Portofolio Section========================================*/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.portofolio {
+    background: var(--bg);
+    min-height: 100vh;
+    width: 100%;
+}
+.portofolio h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+    margin-bottom: 1em;
+}
+
+.portofolio-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.portofolio-section .portofolio-box{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portofolio-box img{
+    width: 100%;
+    transition: .4s ease;
+}
+.portofolio-box img:hover{
+    transform: scale(1.2) ;
+}
+
+.portofolio-box .portofolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(100%);
+    transition: .7s ease;
+}
+.portofolio-box:hover .portofolio-layer{
+    transform: translateY(0);
+}
+
+.portofolio-layer h4 p{
+    font-size: 1rem;
+    margin: .1rem 0 1rem;
+}
+
+.portofolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+.portofolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*====================================End Portofolio Section Style====================================*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------*/
+/*==========================================Contact Section Style=====================================*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.mycontact{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--bg);
+}
+.contactMenu{
+    margin: 20% 0 50%;
+}
+
+.mycontact .social-media a{
+    font-size: 2rem ;
+    margin: 0.5rem;
+    color: var(--second-bg-color);
+    border:  var(--stroke);
+    border-radius: 10%;
+}
+.send {
+    width: 20em;
+    height: fit-content;
+    background-color: var(--button);
+    box-shadow: 0 .2rem .5rem var(--main-color);
+    border-radius: 4%;
+    display: inline-block;
+}
+textarea[type="text"]{
+    border: 1rem;
+    width: 95%;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 3em;
+    color: var(--text);
+    resize: none;
+    margin: 2px;
+    border-radius: 2px solid #ccc;
+    text-align: justify;
+    font-size: 1em;
+}
+input[type="submit"]
+{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: var(--second-bg-color);
+    padding: 10px;
+    margin: .3em;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+input[type="submit"]:active
+{
+    background: linear-gradient(90deg,#45f3ff, #d9138a);
+    opacity: 0.8;
+
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*=======================================Contact End Section Style===================================*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------*/
+/*==========================================Footer Section Style=====================================*/
+/*---------------------------------------------------------------------------------------------------*/
+footer{
+    z-index: 999;
+    height: fit-content;
+    justify-content: center;
+    text-align: justify;
+    align-items: flex-end;
+    background-color: var(--button);
+}
+footer p{
+    text-align: center;
+    align-items: center;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*==========================================Footer Section Style=====================================*/
+/*---------------------------------------------------------------------------------------------------*/
