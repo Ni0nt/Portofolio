@@ -34,15 +34,16 @@ span {
 /*---------------------------------------------------------------------------------------------------*/
 .navbar{
     background-color: transparent;
-    position: sticky;
+    /* position: sticky; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     top: 0;
     padding: 5px;
-    transform: translateY(-100%);
-    transition: 0.5s ease-in-out;
+    
+    /* transform: translateY(-100%);
+    transition: 0.5s ease-in-out; */
 }
 
 .navbar.active{
@@ -50,17 +51,21 @@ span {
 }
 
 .menu-bar ul{
-    display: flex;
     text-decoration: none;
     list-style-type: none;
     gap: 15px;
 }
 
 .menu-bar ul li a{
+    color: var(--second-bg-color);
     font-size: 0.8rem;
     margin-top: 0.5rem;
-    color: var(--main-color);
 }
+
+/* .menu-bar ul li a::before{
+    
+} */
+
 
 .icon-bar {
     padding: 5px;
@@ -74,7 +79,13 @@ span {
     color: var(--main-color);
     text-decoration: none;
 }
-
+.icon-list{
+    background-color: #1AACAC;
+    color: var(--main-color);
+    display: none;
+    font-size: 1.5rem;
+    
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*====================================== About Section ==============================================*/
 /*---------------------------------------------------------------------------------------------------*/
@@ -174,17 +185,17 @@ button:hover{
     flex-direction: row-reverse;
 }
 .card{
-    margin-right: 1em;
     box-shadow: var(--bg);
     border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+    padding: .85rem;
+    margin-top: .85rem;
 }
 .glass{
     background: linear-gradient(135deg, rgba(54, 47, 217, 0.1), rgba(26, 172, 172,0));
+    /* box-shadow: 0 5px 25px rgba(0,0,0,0,25); */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: .85rem;
     border: 1px solid rgba(26, 172, 172, 0.1);
 }
 
@@ -200,7 +211,6 @@ button:hover{
     align-items: flex-end;
     padding: 10px;
     font-size: 15px;
-    margin-right: 2rem;
 }
 
 .img-text {
@@ -224,6 +234,7 @@ button:hover{
 .img-text td {
     padding: 0 5px;
 }
+
 
 .kemampuan ul{
     display: grid;
@@ -252,6 +263,7 @@ button:hover{
     align-items: center;
     text-align: center;
     font-size: .8rem;
+    font-weight: 400;
     margin: 10px; /* Sesuaikan dengan jarak yang Anda inginkan antara logo dan teks */
 }
 .skill li .bxl-html5{

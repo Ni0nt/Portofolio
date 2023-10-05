@@ -1,0 +1,174 @@
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  .navbar{
+    flex-wrap: wrap;
+  }
+
+  .navbar .contact{
+    display : none;
+  }
+  .navbar ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar ul.header-contain-menu{
+    display: none;
+  }
+  .navbar .icon-list{
+    display: flex;
+    align-items: center;
+  }
+
+  .home-index aside{
+    display: none;
+  }
+
+
+  /* About Style */
+  .about-content{
+    flex-direction: column;
+    margin: .5rem;
+  }
+
+  .about aside article {
+    flex: 1;
+    font-size: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .personal-data .img-text{
+    font-size: .7rem;
+    font-weight: 500;
+  }
+
+  .personal-data .kemampuan h4{
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  .personal-data .kemampuan ul{
+    font-size: .1rem;
+    font-weight: 500;
+  }
+  .kemampuan  ul{
+    font-size: 0.5rem;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 390px){
+
+  .menu-bar li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+  /* Home Style */
+  .home-index {
+    flex-direction: column;
+    padding: 10;
+    width: 100vw;
+    height: 100vh;
+  }
+  .homeleft{
+    padding: 0.1rem;
+  }
+  .home-content h2{
+    font-size: .9rem;
+  }
+  .home-content h3{
+    font-size: .9rem;
+  }
+  .home-content p{
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  .home-content .social-media a{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem .4rem;
+    justify-content: center;
+  }
+  .home-content .btn button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* justify-content: center; */
+
+  }
+
+  .home-content aside .pict{
+    padding: 0;
+  }
+
+
+  /* About Style */
+  .about-content{
+    flex-direction: column;
+    margin: .5rem;
+  }
+  .about aside article {
+    flex: 1;
+    font-size: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .personal-data .img-text{
+    font-size: .7rem;
+    font-weight: 500;
+  }
+
+  .personal-data .kemampuan h4{
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  .personal-data .kemampuan ul{
+    font-size: .1rem;
+    font-weight: 500;
+  }
+  .kemampuan  ul{
+    font-size: 0.5rem;
+  }
+
+  /* Projek  */
+  .portofolio-section {
+      display: block;
+  }
+
+  .portofolio-box {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+ 
+  .heading h2{
+      font-size: 2.6rem;
+  }
+  .heading h1{
+      font-size: 5rem;
+  }
+  
+  .services h2 {
+      margin-bottom: 3rem;
+  }
+  .portofolio h2{
+      margin-bottom: 3rem;
+  }
+  .column{
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .box-section {
+      order: 2;
+  }
+  .icons{
+      order : 1;
+  
+  }
+
+}

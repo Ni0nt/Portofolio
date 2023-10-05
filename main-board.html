@@ -6,7 +6,8 @@
     <title>Portofolio</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/mq.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
     
     
@@ -23,8 +24,12 @@
                 <div class="icon-bar">
                     <h1><a href="/">PRTFL</a></h1>
                 </div>
+                
         <nav class="menu-bar">
-            <ul class="header-contain-menu">
+            <div class="icon-list" id="icon-list">
+                <i class='bx bx-menu' ></i>
+            </div>
+            <ul class="header-contain-menu" id="listMenu">
                 <li class="header-menu">
                 <a href="#home" class="header-contain-menu-link">Beranda</a>
                 </li>
@@ -32,7 +37,7 @@
                 <a href="#about" class="header-contain-menu-link">Tentang Diri</a>
                 </li>
                 <li class="header-menu">
-                <a href="#Project" class="header-contain-menu-link">Galeri</a>
+                <a href="#Project" class="header-contain-menu-link">Proyek</a>
                 </li>
                 <li class="header-menu">
             </ul>
@@ -40,6 +45,7 @@
         <div class="contact">
             <h1><a href="#mycontact">Kontak</a></h1>
         </div>
+       
         </div>
 
         <!-- Home Section -->
@@ -73,9 +79,8 @@
         <!-- About Section -->
         <div class="about" id="about">
             <h1>About <span>me</span></h1>
-            <div class="about-content card">
-            <div class="glass">              
-            <aside class="personal-data">
+            <div class="about-content">            
+            <aside class="personal-data card glass">
                 <!-- <h3>Data Diri</h3> -->
                 <div class="img-text">
                     <div class="img-box">
@@ -107,6 +112,7 @@
                       </tbody>
                     </table>
                   </div>
+                
 
                   <!-- Skilll -->
                   <div class="kemampuan">
@@ -126,17 +132,22 @@
                         </li>
                         <li>
                             <i class='bx bxl-java' alt="Java"></i>
-                            <p>Beginner</p>
+                            <p>Basic</p>
                         </li>
                         <li>
                             <i class='bx bxl-figma'></i>
                             <p>Intermediete</p>
                         </li>
+                        <li>
+                            <i class='bx bxl-git'></i>
+                            <p>Basic</p>
+                        </li>
                         
                     </ul>
                 </div>
             </aside>
-            </div>
+
+           
 
             <article class="article-content">
                 <h3>Resume</h3>
